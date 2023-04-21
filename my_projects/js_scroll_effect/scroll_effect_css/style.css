@@ -45,13 +45,8 @@ header ul li{
 position: relative;
 list-style: none;
 }
+/* before scroll */
 header ul li a{
-    position: relative;margin: 0 15px;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: all 0.10s ease-in-out;
     display: none;
 }
 
@@ -62,8 +57,16 @@ header.sticky{
     background-color: rgb(0, 0, 0);
     border-bottom: 1px solid white;
 }
+/* after scroll */
 header.sticky ul li a{
     display: contents;
+    position: relative;margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-weight: 500px;
+    transition: all 0.10s ease-in-out;
 }
 
 /* bg img */
